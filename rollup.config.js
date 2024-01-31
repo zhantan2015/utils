@@ -1,5 +1,6 @@
 import typescript from 'rollup-plugin-typescript2';
-import clear from 'rollup-plugin-clear'
+import clear from 'rollup-plugin-clear';
+import { terser } from 'rollup-plugin-terser';
 export default {
     input: 'src/index.ts',
     output: {
@@ -7,6 +8,7 @@ export default {
     },
     plugins: [
         clear({ targets: ["dist"] }),
-        typescript({ tsconfig: "./tsconfig.json" })
+        typescript({ tsconfig: "./tsconfig.json" }),
+        terser()
     ]
 };
