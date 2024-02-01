@@ -21,7 +21,7 @@ describe("数字转汉字(10以内)", () => {
         expect(num2Hans(9)).toBe('九')
     })
     it("10", () => {
-        expect(num2Hans(9)).toBe('九')
+        expect(num2Hans(10)).toBe('十')
     })
 })
 
