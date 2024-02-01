@@ -7,7 +7,6 @@ describe("生成随机整数", () => {
         for (let i = 0; i < size; i++) {
             res[randInt(1, 2) - 1]++
         }
-        console.log(res)
         expect(Math.abs(res[0] - res[1])).toBeLessThanOrEqual(size / 100)
     })
     it("min大于max", () => {
