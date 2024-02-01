@@ -15,3 +15,14 @@ pnpm：
 ```bash
 $ pnpm add @zhantan2015/utils
 ```
+
+## 使用
+
+```js
+import { randInt, randStr, num2Hans } from "@zhantan2015/utils";
+const rInt = randInt(10, 10)
+
+console.log(rInt) // 10
+console.log(randStr(rInt)) // 长度为10的随机字符串
+console.log(num2Hans(rInt)) // "十"
+```

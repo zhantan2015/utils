@@ -106,3 +106,20 @@ export function throttled(func: Function, duration: number = 1000, immediate: bo
         }
     }
 }
+
+/**
+ * 获取文件后缀
+ * @param filename {string} 文件名
+ * @returns {string | null} 后缀
+ */
+
+export function getExt(filename: string): string | null {
+    const re = /\.[^\.]+$/
+    return re.exec(filename) !== null
+        ? re.exec(filename)![0]
+        : null
+}
+
+import { ApiResult } from "./apiResult"
+
+export { ApiResult }
