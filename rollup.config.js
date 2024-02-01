@@ -3,7 +3,9 @@ import clear from 'rollup-plugin-clear';
 export default {
     input: 'src/index.ts',
     output: {
-        file: "dist/index.js"
+        dir: "dist",
+        name:"ztUtils",
+        format: "umd"
     },
     plugins: [
         clear({ targets: ["dist"] }),
