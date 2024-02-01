@@ -46,7 +46,7 @@ export function randInt(min: number = 1, max: number = 20): number {
  * @returns {string} 随机字符串
  */
 export function randStr(len: number): string {
-    let res: string
+    let res = ""
     while (res.length < len)
         res += (new Date().getTime() + Math.random()).toString(36).replace(".", "")
     return res.length == len ? res : res.slice(0, len)
