@@ -4,11 +4,17 @@ export default {
     input: 'src/index.ts',
     output: {
         dir: "dist",
-        name:"ztUtils",
-        format: "umd"
+        name: "ztUtils",
+        format: "umd",
+        globals: {
+            log4js: "log4js"
+        }
     },
     plugins: [
         clear({ targets: ["dist"] }),
         typescript({ tsconfig: "./tsconfig.json" }),
+    ],
+    external: [
+        "log4js"
     ]
 };
