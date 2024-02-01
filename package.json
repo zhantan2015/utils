@@ -1,6 +1,6 @@
 {
   "name": "@zhantan2015/utils",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "常用工具函数",
   "main": "dist/index.js",
   "type": "module",
@@ -26,5 +26,8 @@
   },
   "files": [
     "dist/"
-  ]
+  ],
+  "dependencies": {
+    "log4js": "^6.9.1"
+  }
 }

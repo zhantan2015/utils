@@ -121,5 +121,6 @@ export function getExt(filename: string): string | null {
 }
 
 import { ApiResult } from "./apiResult"
+import { logger, stdout } from "./logger"
 
-export { ApiResult }
+export { ApiResult, logger, stdout }
